@@ -6,5 +6,7 @@ import uirouter from 'angular-ui-router';
 import routing from './app.config';
 import home from './home';
 
-angular.module('app', [uirouter, home])
+import videoJs from 'vjs.video'
+
+angular.module('app', [uirouter, home, videoJs])
   .config(routing);

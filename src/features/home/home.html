@@ -4,8 +4,20 @@
 
 <div>
   <ul>
-    <li ng-repeat="item in videoList"></li>
+    <li ng-repeat="item in home.videoList.bads">{{::item.description}}</li>
+  </ul>
+
+  <ul>
+    <li ng-repeat="item in home.videoList.goods">{{::item.description}}</li>
   </ul>
 </div>
+
+{{home.trustSrc(home.videoList.goods[0].url)}}
+<video class="video-js vjs-default-skin" controls preload="auto"
+       width="640" height="264" poster="http://static.www.real.com/resources/wp-content/uploads/2012/10/download-online-videos1.jpg" vjs-video>
+    <source src="{{trustSrc(home.videoList.goods[0].url)}}" type="video/mp4">
+    <!--<source src="http://bad-videos.dev.zype.com/good-video1/ArduinoTheDocumentary.mp4" type="video/mp4">-->
+    <!--<source src="http://bad-videos.dev.zype.com/video1/zfaeEvbmOKYqguNR.m3u8" type="video/mp4">-->
+</video>
 
 <button class="btn btn-primary" ng-click="home.changeName()">Change</button>

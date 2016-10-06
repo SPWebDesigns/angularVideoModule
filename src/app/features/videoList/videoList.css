@@ -1,0 +1,32 @@
+#videoList{
+	background: rgba(50, 35, 35, 0.8);
+	color: #fff;
+}
+
+.video-list-title-container{
+	text-align: center;
+    padding: 15px;
+    background: rgba(250, 35, 35, 0.8);
+}
+.videoList-h1{
+	font-size: 24px;
+	padding:10px;
+	font-family: 'Irish Grover', cursive;
+	color: #fff;
+	border-radius: 20px;
+	z-index: 2;
+}
+.video-list-subtitle{
+	font-size: 14px;
+	font-family: 'Fontdiner Swanky', cursive;
+	text-align: center;
+}
+
+.each-video-container{
+	list-style-type: none;
+	padding: 0;
+}
+
+.each-video{
+	margin: 20px;
+}

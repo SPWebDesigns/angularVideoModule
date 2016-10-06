@@ -81,6 +81,9 @@ module.exports = function makeWebpackConfig () {
     preLoaders: [
       { test: /\.json$/, loader: 'json-loader'}
     ],
+    noParse: [
+            /node_modules[\\/]video\.js/
+    ],
     loaders: [{
       // JS LOADER
       // Reference: https://github.com/babel/babel-loader
@@ -161,7 +164,7 @@ module.exports = function makeWebpackConfig () {
     // Render index.html
     config.plugins.push(
       new HtmlWebpackPlugin({
-        template: './src/public/index.html',
+        template: './src/index.html',
         inject: 'body'
       }),
 
@@ -190,7 +193,7 @@ module.exports = function makeWebpackConfig () {
       // Copy assets from the public folder
       // Reference: https://github.com/kevlened/copy-webpack-plugin
       new CopyWebpackPlugin([{
-        from: __dirname + '/src/public'
+        from: __dirname + './src/public'
       }])
     )
   }

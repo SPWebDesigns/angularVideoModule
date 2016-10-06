@@ -20,12 +20,14 @@
   },
   "homepage": "https://github.com/Foxandxss/angular-webpack-workflow",
   "dependencies": {
-    "angular": "^1.5.0",
+    "angular": "^1.5.8",
     "angular-sanitize": "^1.5.8",
     "angular-ui-router": "^0.3.1",
     "bootstrap": "^3.3.7",
     "json-loader": "^0.5.4",
     "ng-sanitize": "0.0.2",
+    "videojs-contrib-hls": "^3.6.0",
+    "videojs-playlist": "^3.0.0",
     "vjs-video": "^0.1.6"
   },
   "devDependencies": {
